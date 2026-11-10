@@ -4,6 +4,10 @@ public abstract class Site {
 
     public abstract double getBaseAmount();
 
+    public double getBillableAmount(){
+        return getBaseAmount() + getTaxAmount();
+    }
+
     public abstract double getTaxAmount();
 
 }

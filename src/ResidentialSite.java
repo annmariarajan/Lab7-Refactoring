@@ -9,9 +9,7 @@ public class ResidentialSite extends Site {
     }
 
     public double getBillableAmount(){
-        double base = getBaseAmount();
-        double tax = getTaxAmount();
-        return base + tax;
+        return getBaseAmount() + getTaxAmount();
     }
 
     private double getTaxAmount() {
